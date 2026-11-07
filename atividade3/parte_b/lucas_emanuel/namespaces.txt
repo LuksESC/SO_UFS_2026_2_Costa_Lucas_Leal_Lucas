@@ -1,0 +1,14 @@
+=== data ===
+2026-11-07T18:16:19-03:00
+=== lab_a ===
+PID_host=4015
+PID1_comm=sleep
+ns_pid=pid:[4026532713]
+ns_mnt=mnt:[4026532710]
+ns_net=net:[4026532715]
+=== lab_b ===
+PID_host=4058
+PID1_comm=sleep
+ns_pid=pid:[4026532816]
+ns_mnt=mnt:[4026532813]
+ns_net=net:[4026532818]
