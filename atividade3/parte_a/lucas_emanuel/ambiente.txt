@@ -1,7 +1,7 @@
 === data ===
 2026-11-07T17:28:18-03:00
 === uname -a ===
-Linux LUCAS-DESKTOP 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Linux HOST 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
 === os-release ===
 PRETTY_NAME="Ubuntu 24.04.5 LTS"
 NAME="Ubuntu"
@@ -56,3 +56,14 @@ Docker Compose version v2.39.2-desktop.1
 Cgroup=2 Driver=cgroupfs
 === SO e kernel do daemon ===
 OS=Docker Desktop (containerized) Kernel=6.18.54.1-microsoft-standard-WSL2 CPUs=12 Mem=16713035776
+=== Windows (host) ===
+
+Microsoft Windows [versao 10.0.26200.9711]
+=== versao do WSL ===
+Versao do WSL: 3.0.3.0
+Versao do kernel: 6.18.54.1-1
+Versao do WSLg: 1.0.79
+Versao do MSRDC: 1.2.7391
+Versao do Direct3D: 1.611.1-81528511
+Versao do DXCore: 10.0.26100.1-240331-1435.ge-release
+Versao do Windows: 10.0.26200.9711

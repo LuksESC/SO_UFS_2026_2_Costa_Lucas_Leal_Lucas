@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 690" width="880" height="690" font-family="Arial, Helvetica, sans-serif">
+  <rect width="880" height="690" fill="#ffffff"/>
+
+  <text x="440" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">Camadas do ambiente da Atividade 3 (Docker Desktop sobre WSL2)</text>
+
+  <!-- Hardware -->
+  <rect x="40" y="44" width="800" height="62" rx="6" fill="#e8e8e8" stroke="#555" stroke-width="1.5"/>
+  <text x="440" y="70" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Hardware físico</text>
+  <text x="440" y="92" text-anchor="middle" font-size="13" fill="#1a1a1a">12 CPUs lógicas · ~15 GiB de RAM (valores vistos pelo WSL2 e pelo daemon)</text>
+
+  <!-- Windows + hypervisor -->
+  <rect x="40" y="122" width="800" height="62" rx="6" fill="#d6e4f5" stroke="#2b5c99" stroke-width="1.5"/>
+  <text x="440" y="148" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Windows (host) + hypervisor</text>
+  <text x="440" y="170" text-anchor="middle" font-size="13" fill="#1a1a1a">Executa a VM leve utilizada pelo WSL2</text>
+
+  <!-- VM WSL2 -->
+  <rect x="40" y="200" width="800" height="440" rx="8" fill="#f4f9ee" stroke="#4d8a2e" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="56" y="224" font-size="15" font-weight="bold" fill="#1a1a1a">VM do WSL2 (máquina virtual leve)</text>
+
+  <!-- Kernel -->
+  <rect x="60" y="238" width="760" height="64" rx="6" fill="#fbe3b8" stroke="#b9770e" stroke-width="1.8"/>
+  <text x="440" y="263" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Kernel Linux único e compartilhado</text>
+  <text x="440" y="285" text-anchor="middle" font-size="13" fill="#1a1a1a">6.18.54.1-microsoft-standard-WSL2 · cgroup v2 (driver cgroupfs) · namespaces</text>
+
+  <!-- Distros -->
+  <rect x="60" y="318" width="370" height="76" rx="6" fill="#ffffff" stroke="#4d8a2e" stroke-width="1.5"/>
+  <text x="245" y="342" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Distro Ubuntu 24.04.5 LTS</text>
+  <text x="245" y="363" text-anchor="middle" font-size="12.5" fill="#1a1a1a">Terminal e cliente Docker (docker CLI 28.3.3)</text>
+  <text x="245" y="381" text-anchor="middle" font-size="12.5" fill="#1a1a1a">Só espaço de usuário, sem kernel próprio</text>
+
+  <rect x="450" y="318" width="370" height="76" rx="6" fill="#ffffff" stroke="#4d8a2e" stroke-width="1.5"/>
+  <text x="635" y="342" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Distro docker-desktop (daemon)</text>
+  <text x="635" y="363" text-anchor="middle" font-size="12.5" fill="#1a1a1a">Docker Desktop 4.45.0 · engine 28.3.3</text>
+  <text x="635" y="381" text-anchor="middle" font-size="12.5" fill="#1a1a1a">containerd 1.7.27 · runc 1.2.5</text>
+
+  <!-- Seta cliente -> daemon -->
+  <line x1="430" y1="356" x2="450" y2="356" stroke="#1a1a1a" stroke-width="1.8"/>
+  <polygon points="450,356 443,351 443,361" fill="#1a1a1a"/>
+
+  <!-- Seta daemon -> containers -->
+  <line x1="635" y1="394" x2="635" y2="424" stroke="#1a1a1a" stroke-width="1.8"/>
+  <polygon points="635,424 630,417 640,417" fill="#1a1a1a"/>
+  <text x="647" y="414" font-size="12" fill="#1a1a1a">cria e gerencia</text>
+
+  <!-- Container A -->
+  <rect x="60" y="428" width="370" height="160" rx="6" fill="#fdeaea" stroke="#b03a3a" stroke-width="1.6"/>
+  <text x="245" y="452" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Contêiner lab_a</text>
+  <text x="245" y="472" text-anchor="middle" font-size="12" fill="#1a1a1a">python:3.12-slim @ sha256:4840d514…b93a54</text>
+  <text x="245" y="496" text-anchor="middle" font-size="12" fill="#1a1a1a">PID 1 interno: sleep (PID no host do daemon: 4015)</text>
+  <text x="245" y="520" text-anchor="middle" font-size="12" fill="#1a1a1a">pid:[4026532713]</text>
+  <text x="245" y="538" text-anchor="middle" font-size="12" fill="#1a1a1a">mnt:[4026532710]</text>
+  <text x="245" y="556" text-anchor="middle" font-size="12" fill="#1a1a1a">net:[4026532715]</text>
+  <text x="245" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">Limites de recursos: cgroup próprio</text>
+
+  <!-- Container B -->
+  <rect x="450" y="428" width="370" height="160" rx="6" fill="#fdeaea" stroke="#b03a3a" stroke-width="1.6"/>
+  <text x="635" y="452" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Contêiner lab_b</text>
+  <text x="635" y="472" text-anchor="middle" font-size="12" fill="#1a1a1a">python:3.12-slim @ sha256:4840d514…b93a54</text>
+  <text x="635" y="496" text-anchor="middle" font-size="12" fill="#1a1a1a">PID 1 interno: sleep (PID no host do daemon: 4058)</text>
+  <text x="635" y="520" text-anchor="middle" font-size="12" fill="#1a1a1a">pid:[4026532816]</text>
+  <text x="635" y="538" text-anchor="middle" font-size="12" fill="#1a1a1a">mnt:[4026532813]</text>
+  <text x="635" y="556" text-anchor="middle" font-size="12" fill="#1a1a1a">net:[4026532818]</text>
+  <text x="635" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">Limites de recursos: cgroup próprio</text>
+
+  <!-- Nota final -->
+  <text x="440" y="614" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Os contêineres não têm kernel próprio: compartilham o kernel da VM do WSL2</text>
+  <text x="440" y="632" text-anchor="middle" font-size="12.5" fill="#1a1a1a">com as duas distros. Namespaces mudam o que cada um enxerga; cgroups limitam o que consomem.</text>
+
+  <text x="440" y="668" text-anchor="middle" font-size="11.5" fill="#555">Fonte dos dados: parte_a/lucas_emanuel/ambiente.txt e parte_b/lucas_emanuel/namespaces.txt (coleta de 07/11/2026)</text>
+</svg>
