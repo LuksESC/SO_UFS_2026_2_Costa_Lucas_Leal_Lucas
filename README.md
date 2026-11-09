@@ -1,4 +1,4 @@
-# Atividade 3 — Contêineres, namespaces e cgroups (Equipe Mistral)
+# Atividade 3 — Contêineres, namespaces e cgroups
 
 ## Estrutura do repositório
 
