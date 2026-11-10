@@ -1,4 +1,4 @@
-# Atividade 3 — Contêineres, namespaces e cgroups (Equipe Mistral)
+# Atividade 3 — Contêineres, namespaces e cgroups
 
 Sistemas Operacionais (UFS), 2026.2. Laboratório reprodutível sobre isolamento de processos e limites de recursos em contêineres Linux.
 
