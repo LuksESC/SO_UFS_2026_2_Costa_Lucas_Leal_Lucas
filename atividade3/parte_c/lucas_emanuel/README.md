@@ -33,6 +33,10 @@ python3 resumo.py          # requer matplotlib (sudo apt install python3-matplot
 
 O script recusa rodar se `resultados_brutos.csv` ou `brutos/` já existirem (preserva tentativas). Para limpar uma execução própria, renomeie ou mova esses itens.
 
+## Escolha da quantidade de trabalho (N)
+
+O valor inicial sugerido no roteiro era N = 20.000.000. Na tentativa anterior, com N = 20M, a condição C2 durava ~1 s e a variação relativa entre repetições era alta (~30%); aumentamos para N = 100.000.000 (C1 ≈ 14,6 s, abaixo do limite de 60 s), validamos esse valor no ensaio, congelamos antes das seis execuções oficiais e não o alteramos depois. A tentativa com N = 20M foi preservada na pasta de Daniel Farani.
+
 ## Parâmetros de cada contêiner
 
 `--network none --cpus <0.5|1.0> --memory 256m --memory-swap 256m --pids-limit 64`, carga montada em `/carga_cpu.py:ro`, `timeout 90` no host, `ITERACOES=100000000`. Limites confirmados dentro do contêiner em todas as execuções: `cpu.max` = `50000 100000` (C1) e `100000 100000` (C2); `memory.max` = 268435456; `memory.swap.max` = 0; `pids.max` = 64.

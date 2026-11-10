@@ -67,3 +67,7 @@ Versao do MSRDC: 1.2.7391
 Versao do Direct3D: 1.611.1-81528511
 Versao do DXCore: 10.0.26100.1-240331-1435.ge-release
 Versao do Windows: 10.0.26200.9711
+=== wsl -l -v (Windows) ===
+  NAME              STATE           VERSION
+* Ubuntu            Running         2
+  docker-desktop    Running         2

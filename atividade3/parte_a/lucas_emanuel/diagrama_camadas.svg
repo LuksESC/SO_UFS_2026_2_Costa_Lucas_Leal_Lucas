@@ -11,7 +11,7 @@
   <!-- Windows + hypervisor -->
   <rect x="40" y="122" width="800" height="62" rx="6" fill="#d6e4f5" stroke="#2b5c99" stroke-width="1.5"/>
   <text x="440" y="148" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Windows (host) + hypervisor</text>
-  <text x="440" y="170" text-anchor="middle" font-size="13" fill="#1a1a1a">Executa a VM leve utilizada pelo WSL2</text>
+  <text x="440" y="170" text-anchor="middle" font-size="13" fill="#1a1a1a">Executa a VM leve do WSL2 · Windows 10.0.26200.9711 · WSL 3.0.3.0</text>
 
   <!-- VM WSL2 -->
   <rect x="40" y="200" width="800" height="440" rx="8" fill="#f4f9ee" stroke="#4d8a2e" stroke-width="2" stroke-dasharray="7 4"/>
@@ -50,7 +50,7 @@
   <text x="245" y="520" text-anchor="middle" font-size="12" fill="#1a1a1a">pid:[4026532713]</text>
   <text x="245" y="538" text-anchor="middle" font-size="12" fill="#1a1a1a">mnt:[4026532710]</text>
   <text x="245" y="556" text-anchor="middle" font-size="12" fill="#1a1a1a">net:[4026532715]</text>
-  <text x="245" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">Limites de recursos: cgroup próprio</text>
+  <text x="245" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">cgroup próprio (sem limites nesta coleta)</text>
 
   <!-- Container B -->
   <rect x="450" y="428" width="370" height="160" rx="6" fill="#fdeaea" stroke="#b03a3a" stroke-width="1.6"/>
@@ -60,7 +60,7 @@
   <text x="635" y="520" text-anchor="middle" font-size="12" fill="#1a1a1a">pid:[4026532816]</text>
   <text x="635" y="538" text-anchor="middle" font-size="12" fill="#1a1a1a">mnt:[4026532813]</text>
   <text x="635" y="556" text-anchor="middle" font-size="12" fill="#1a1a1a">net:[4026532818]</text>
-  <text x="635" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">Limites de recursos: cgroup próprio</text>
+  <text x="635" y="577" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">cgroup próprio (sem limites nesta coleta)</text>
 
   <!-- Nota final -->
   <text x="440" y="614" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Os contêineres não têm kernel próprio: compartilham o kernel da VM do WSL2</text>

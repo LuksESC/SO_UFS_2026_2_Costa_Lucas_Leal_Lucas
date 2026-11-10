@@ -1,0 +1,20 @@
+# data: 2026-11-10T12:51:35-03:00
+# imagem: python@sha256:4840d514c583a4d3d8cad3940e68dee6f0f6f3635c12fcd0a3d74c21a5b93a54
+== identidade ==
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+== leitura de /dados/texto.txt ==
+Documento sintetico
+== tentativa de escrita em /dados ==
+touch: cannot touch '/dados/novo.txt': Read-only file system
+exit=1
+== montagem de /dados ==
+1173 1164 0:70 <CAMINHO_WINDOWS>/SO_UFS_2026_2_Costa_Lucas_Leal_Lucas/atividade3/parte_d/lucas_emanuel/dados_demo /dados ro,noatime - 9p C:\134 rw,aname=drvfs;path=C:\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6
+== capabilities efetivas ==
+CapEff:	0000000000000000
+== no_new_privs ==
+NoNewPrivs:	1
+== controle: escrita em /tmp ==
+ok em /tmp
+== host: conteudo de dados_demo apos o teste ==
+total 0
+-rwxrwxrwx 1 lucas lucas 20 Nov 10 12:50 texto.txt
