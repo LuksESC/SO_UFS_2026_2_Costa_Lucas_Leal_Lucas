@@ -61,11 +61,7 @@ Razão das medianas de wall (C1/C2): 2,175; wall ÷ tempo de CPU ≈ 2,0 na C1 e
 Diretório sintético montado como `/dados:ro` em um contêiner com `--user 65534:65534`, `--cap-drop ALL`, `--security-opt no-new-privileges:true` e `--network none`. A leitura funcionou; a escrita foi negada com `Read-only file system` (EROFS, e não "Permission denied"); `CapEff` zerado e `NoNewPrivs: 1`; escrita em `/tmp` funcionou como controle. Registro bruto e análise em `parte_d/lucas_emanuel/` (`readonly.txt` e `README.md`).
 
 Limite da evidência: a negação de escrita não prova isolamento absoluto; o kernel é compartilhado.
-
+      
 ## Vídeo
 
 _URL: https://youtu.be/DWM-jKFvik4_
-
-## Commit final
-
-_Hash: a preencher._
